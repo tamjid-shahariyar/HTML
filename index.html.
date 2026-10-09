@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox & Grid Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- 1. THE MENU (Icon Bar) -->
+    <nav class="icon-bar">
+        <a class="active" href="#"><i class="fa fa-home"></i></a>
+        <a href="#"><i class="fa fa-search"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        <a href="#"><i class="fa fa-globe"></i></a>
+        <a href="#"><i class="fa fa-trash"></i></a>
+    </nav>
+
+    <!-- 2. MAIN CONTENT (CSS Grid Layout) -->
+    <main class="grid-container">
+        
+        <!-- Header Section -->
+        <header class="grid-header">
+            <h1>Flexbox & Grid Assignment</h1>
+            <p>Demonstrating modern CSS layout techniques</p>
+        </header>
+
+        <!-- Card 1: Flexbox Layout -->
+        <section class="grid-item">
+            <h2>Flexbox Layout</h2>
+            <div class="flex-demo">
+                <img src="https://via.placeholder.com/150/3498db/ffffff?text=Flexbox" alt="Flexbox Demo">
+                <div class="text-content">
+                    <h3>How it works</h3>
+                    <p>This section uses <strong>Flexbox</strong>. The <code>display: flex</code> property is applied to the container.</p>
+                    <ul>
+                        <li><strong>Settings:</strong> <code>justify-content: space-around</code> spaces items evenly.</li>
+                        <li><strong>Responsive:</strong> When the screen size gets too small, <code>flex-wrap: wrap</code> pushes items to the next line.</li>
+                        <li><strong>Features:</strong> Perfect for 1-dimensional layouts (rows OR columns).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card 2: Grid Layout -->
+        <section class="grid-item">
+            <h2>CSS Grid Layout</h2>
+            <div class="grid-demo">
+                <img src="https://via.placeholder.com/150/e74c3c/ffffff?text=Grid" alt="Grid Demo">
+                <div class="text-content">
+                    <h3>How it works</h3>
+                    <p>This section uses <strong>CSS Grid</strong>. The main page container uses <code>display: grid</code>.</p>
+                    <ul>
+                        <li><strong>Settings:</strong> <code>grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))</code> creates a responsive column system.</li>
+                        <li><strong>Responsive:</strong> Without media queries, the grid automatically adjusts the number of columns based on screen width.</li>
+                        <li><strong>Features:</strong> Best for 2-dimensional layouts (rows AND columns).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Published to GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
